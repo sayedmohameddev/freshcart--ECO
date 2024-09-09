@@ -1,0 +1,70 @@
+<nav class=" navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="home" >
+        <img src="./assets/images/freshcart-logo.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+
+          <li class="nav-item">
+            <a class="nav-link fit-content"  routerLink="home"  routerLinkActive="active-link">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fit-content"  routerLink="products" routerLinkActive="active-link">products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fit-content"  routerLink="wishlist"  routerLinkActive="active-link">Wishlist</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link fit-content"  routerLink="categories"  routerLinkActive="active-link">categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fit-content"  routerLink="brands"  routerLinkActive="active-link">brands</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav ms-auto ">
+
+          <li class="nav-item">
+            <a class="nav-link position-relative fit-content "  routerLink="cart" routerLinkActive="active-link">
+              <i class="fa-solid fa-cart-shopping fa-2xl "></i>
+              <span class="badge bg-danger position-absolute top-0 start-0 " >{{CountNumber()}}</span>
+            </a>
+          </li>
+
+          <li class="nav-item d-flex gap-3 me-3 ">
+            <a target="_blank" href="https://www.instagram.com/sayeed_mohamed.1/"><i class="fab fa-instagram  "></i></a>
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100036507706960"><i class="fab fa-facebook  "></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/sayed-mohamed-81b66b290/"><i
+                class="fab fa-linkedin"></i></a>
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=01150778216" class="text-reset"><i
+                class="fa-brands fa-whatsapp"></i></a>
+          </li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Lang
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item"   (click)="changeLanguage('en')" >English</a></li>
+              <li><a class="dropdown-item" (click)="changeLanguage('ar')" >Arabic</a></li>
+            </ul>
+          </li>
+              <li class="nav-item">
+                <a class="nav-link cr bg-main-light btn btn-danger" (click)="_AuthService.logOut()" >
+                  SignOut
+                </a>
+              </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
