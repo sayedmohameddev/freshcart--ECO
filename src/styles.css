@@ -95,4 +95,6 @@
   .btn-main:hover {
     background-color: #11bd11;
   }
-  
+  .img{
+    border-radius: 50%;
+  }
