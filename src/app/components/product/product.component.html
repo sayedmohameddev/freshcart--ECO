@@ -11,10 +11,10 @@
                <div class="product  p-2">
                  
                   <div [routerLink]= " ['/details', product.id ] ">
-                    <img [src]="product.imageCover" class="w-100" [alt]="product.title">
-                   <h3 class="small text-main" >{{product.category.name}}</h3>
-                   <h4 class="h6">{{product.title.split(" ",2).join(" ")}}</h4>
-                   <div class="d-flex justify-content-between align-items-center ">
+                           <img [src]="product.imageCover" class="w-100" [alt]="product.title">
+                           <h3 class="small text-main" >{{product.category.name}}</h3>
+                           <h4 class="h6">{{product.title.split(" ",2).join(" ")}}</h4>
+                           <div class="d-flex justify-content-between align-items-center ">
                       <span>{{product.price | currency : 'GBP' }}  </span>
                        <div>
                           @for (item of [1,2,3,4,5].slice(0 , product.ratingsAverage); track $index) {
@@ -33,7 +33,7 @@
                     <span ><i (click)="addtoWishlist(product.id)" class="far fa-heart heart   "></i></span> 
                   }
                   @if (wishlist.includes(product.id)) {
-                    <span ><i  class="fas fa-heart heart text-danger "  ></i></span> 
+                    <span ><i  class="fas fa-heart heart text-success "  ></i></span> 
                   }
                    <button class="btn-main w-100" (click)="addcart(product.id)" >Add To Cart</button>
 

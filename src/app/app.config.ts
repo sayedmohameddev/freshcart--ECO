@@ -11,6 +11,7 @@ import { errorsInterceptor } from './core/interceptors/errors.interceptor';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { loadingInterceptor } from './core/interceptors/loading.interceptor';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 export const appConfig: ApplicationConfig = {
   providers: [provideRouter(routes  ,withViewTransitions()), provideClientHydration(),provideHttpClient(withFetch() ,

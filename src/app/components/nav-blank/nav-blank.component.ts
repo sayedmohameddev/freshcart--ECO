@@ -12,6 +12,7 @@ import { LanguageService } from '../../core/services/language.service'; // اس�
   styleUrls: ['./nav-blank.component.css']
 })
 export class NavBlankComponent implements OnInit {
+[x: string]: any;
 
   // inject الخدمات
   readonly _AuthService = inject(AuthService);

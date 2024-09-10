@@ -24,6 +24,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
   styleUrl: './home.component.css'
 })
 export class HomeComponent implements OnInit ,OnDestroy {
+[x: string]: any;
 
 
 

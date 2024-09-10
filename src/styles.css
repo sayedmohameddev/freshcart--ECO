@@ -16,6 +16,8 @@
   
   body {
     font-family: var(--font-family) !important;
+      background-image: url("./assets/images/light-patten.svg");
+   
   }
   
   .nav-link {
